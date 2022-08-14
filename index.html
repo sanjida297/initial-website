@@ -5,15 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        h1::before{
+            content: "hello ";
+            color: blue;
+            font-size: 15px;
+            background-color: crimson;
+
+        }
+        .special-effect::after{
+            content: " bye";
+            color: aqua;
+            background-color: burlywood;
+        }
+        body {
+        counter-reset: order;                      /* Set a counter named 'section', and its initial value is 0. */
+        }
+
+        p::before {
+        counter-increment: order;                  /* Increment the value of section counter by 1 */
+        content: "Crush " counter(order) ": ";   /* Display the word 'Section ', the value of
+                                                        section counter, and a colon before the content
+                                                        of each h3 */
+        }
+
+        
+    </style>
 </head>
 <body>
-    <h1>my first ever website</h1>
-    <h3>yes!! I can do it</h3>
-    <h4> if you think it, you can it </h4>
-    <p>felling happy</p>
-    <p>I can push github</p>
     <input type="text">
     <br>
-    <button>click me here</button>
+    <button>cpck me here</button>
+    <h1>pessodu class</h1>
+    <h1>vodro class</h1>
+    <h1 class="special-effect">ajaira class</h1>
+    <ul>
+        <p>shania</p>
+        <p>tania</p>
+        <p>jabin</p>
+        <p>sonia</p>
+        <p>samia</p>
+        
+    </ul>
+
 </body>
 </html>
